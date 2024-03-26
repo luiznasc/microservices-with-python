@@ -1,0 +1,10 @@
+version: '2.26.0'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
